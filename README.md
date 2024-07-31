@@ -53,8 +53,24 @@ This project generates interpolated images between two existing images to create
     desert_sands_3_0.png
    ```
 3. For more details on the arguments:
+
    ```
    python main.py -h
+   ```
+
+   Help message:
+
+   ```
+   usage: main.py [-h] [-img IMAGES [IMAGES ...]] [-num NUM_STEPS [NUM_STEPS ...]]
+
+   Interpolate images between two images.
+
+   options:
+   -h, --help            show this help message and exit
+   -img IMAGES [IMAGES ...], --images IMAGES [IMAGES ...]
+                           Paths of the input images, separated by spaces.
+   -num NUM_STEPS [NUM_STEPS ...], --num_steps NUM_STEPS [NUM_STEPS ...]
+                           Number of images between two images. If only one number is provided, it will be used for all image-pairs.
    ```
 
 ## Contributing
