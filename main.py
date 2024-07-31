@@ -72,10 +72,6 @@ def main():
 
     args = parser.parse_args()
 
-    # Print the number of images and num_steps
-    print(f'Number of images: {len(args.images)}')
-    print(f'Number of num_steps: {len(args.num_steps)}')
-
     # Validate the number of steps
     if len(args.images) < 2:
         parser.error("At least 2 image paths must be provided.")
