@@ -28,8 +28,8 @@ def interpolate_images(img_paths, num_steps_list):
         if img1.shape != img2.shape:
             raise ValueError(f"Images {img1_path} and {img2_path} must have the same dimensions for interpolation")
 
-        # Extract file name prefix from the first image
-        base_name = os.path.splitext(os.path.basename(img1_path))[0]
+        # Set file name prefix from the first image
+        base_name = f'image_{i+1}'
 
         # Save the first image of the current pair
         first_image_path = os.path.join(output_folder, f'{base_name}_0.png')
@@ -47,13 +47,13 @@ def interpolate_images(img_paths, num_steps_list):
 
     # Ensure the last image in the list is saved
     last_img_path = img_paths[-1]
-    last_base_name = os.path.splitext(os.path.basename(last_img_path))[0]
+    last_base_name = f'image_{len(img_paths)}'
     final_image_path = os.path.join(output_folder, f'{last_base_name}_0.png')
     cv2.imwrite(final_image_path, cv2.imread(last_img_path))
     print(f'Saved to ./{final_image_path}')
 
 def main():
-    parser = argparse.ArgumentParser(description='Interpolate images between two images.')
+    parser = argparse.ArgumentParser(description='Interpolate images between two images with customizable order and number of inter-images for each image-pairs.')
     
     parser.add_argument(
         '-img',
