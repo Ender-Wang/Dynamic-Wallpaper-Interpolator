@@ -76,6 +76,10 @@ options:
     image_3_0.png
    ```
 
+## Create Dynamic Wallpaper
+
+Use [Equinox](https://github.com/rlxone/Equinox) created by [rlxone](https://github.com/rlxone) to create dynamic wallpapers from the interpolated images.
+
 ## Contributing
 
 Feel free to fork the repository and make a pull request if you have improvements or fixes.
