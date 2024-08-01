@@ -78,7 +78,7 @@ options:
 
 ## Create Dynamic Wallpaper
 
-Use [Equinox](https://github.com/rlxone/Equinox) created by [rlxone](https://github.com/rlxone) to create dynamic wallpapers from the interpolated images.
+Use [wallpapper](https://github.com/mczachurski/wallpapper) created by [mczachurski](https://github.com/mczachurski) to create dynamic wallpapers from the interpolated images.
 
 ## Contributing
 
